@@ -19,7 +19,7 @@ run:
     resources:
           limits:
             nvidia.com/gpu: 1
-    image: polyaxon/polyaxon-examples:tf
+    image: rnoxy/deep-learning
     workingDir: "{{ globals.artifacts_path }}/polyaxon-examples/in_cluster/keras/mnist"
     command: ["python", "-u", "model.py"]
     args: ["--conv1_size={{ conv1_size }}",
