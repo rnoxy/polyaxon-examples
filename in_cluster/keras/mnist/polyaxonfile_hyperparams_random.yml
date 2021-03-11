@@ -26,4 +26,5 @@ matrix:
     epochs:
       kind: choice
       value: [1, 3, 7]
-pathRef: ./polyaxonfile.yml
+#pathRef: ./polyaxonfile.yml
+urlRef: https://raw.githubusercontent.com/rnoxy/polyaxon-examples/patch-4/in_cluster/keras/mnist/polyaxonfile.yml
