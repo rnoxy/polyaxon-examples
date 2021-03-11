@@ -16,6 +16,9 @@ run:
   init:
   - git: {"url": "https://github.com/polyaxon/polyaxon-examples"}
   container:
+    resources:
+          limits:
+            nvidia.com/gpu: 1
     image: polyaxon/polyaxon-examples:tf
     workingDir: "{{ globals.artifacts_path }}/polyaxon-examples/in_cluster/keras/mnist"
     command: ["python", "-u", "model.py"]
